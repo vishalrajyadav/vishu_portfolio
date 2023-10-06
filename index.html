@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .nav-item:hover{
+            color: red;
+        }
+
+        .jumbotron {
+            transition: background-image 1s ease-in-out;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .welcome-title {
+            font-size: 56px;
+           font-weight: 600;
+            animation: floatAnimation 3s ease-in-out infinite;
+        }
+        p{
+            font-weight: 600;
+            font-size: 40px;
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            transition: color 0.3s; 
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: red; 
+        }
+
+        .social-links .nav-item .nav-link {
+            color: #000; 
+        }
+        h1,p{
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 24px;">VISHU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav social-links mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100011634708404">Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/vishalrajyaduvanshi59?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Email</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="PORTFOLIO.HTML">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">My Gallery</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron" style="background-image: url('two.jpeg');">
+    <h1 class="display-4 text-white welcome-title">Welcome to PORTFOLIO</h1>
+    <p class="lead text-white" style="font-size: x-large;">Explore my Journey...</p>
+</div>
+    
+<script>
+    const backgroundImageUrls = [
+        'two.jpeg',
+        'mine.jpeg',
+        'myphoto5.jfif',
+    ];
+
+    let backgroundImageIndex = 0;
+
+    function updateBackgroundImage() {
+        document.querySelector('.jumbotron').style.backgroundImage = `url('${backgroundImageUrls[backgroundImageIndex]}')`;
+        backgroundImageIndex = (backgroundImageIndex + 1) % backgroundImageUrls.length;
+    }
+
+    setInterval(updateBackgroundImage, 3000);
+
+    updateBackgroundImage();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

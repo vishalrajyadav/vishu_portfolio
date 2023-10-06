@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Raj - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            overflow: hidden;
+            transition: 1.5s;
+        }
+        .profile-image {
+            max-width: 250px;
+            border-radius: 8%;
+            margin: 20px auto;
+            display: block;
+            overflow: hidden;
+            transition: 1.5s;
+        }
+        .profile-image:hover {
+           transform: scale(1.5);
+           box-shadow: 10px 12px 8px black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .skill-badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .skill-badge {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 20%;
+            transition: width 0.5s;
+        }
+        .skill-badge:hover {
+            width: 100%;
+        }
+        .navbar-nav .nav-item .nav-link {
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: red;
+        }
+        .social-links .nav-item .nav-link {
+            color: #000;
+        }
+        a{
+            text-decoration: none;
+        }
+        span{
+            background-color: rgb(255, 255, 3);
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 24px;">VISHU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav social-links mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100011634708404">Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/vishalrajyaduvanshi59?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Email</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="PORTFOLIO.HTML">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">My Gallery</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="header">
+        <img src="two.jpeg" alt="Vishal Raj" class="profile-image">
+        <h1>Vishal Raj</h1>
+        <p>Computer Engineering Student | Bihar</p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+               <span> Hello!</span> My name is <span>Vishal Raj</span>, and I am a second-year student pursuing Computer Science Engineering. i'm from Bihar, I am a passionate learner and a tech enthusiast. I possess skills in <span>programming, web development, and editing</span>. My goal is to contribute to the world of technology and innovation. I have consistently achieved average grades in my academic journey, it may be reflecting my low dedication and hard work. <span>Editing</span> is my hobby, and <span>I enjoy merging creativity with technology</span>. I am a strong advocate for teamwork, actively participating in hackathons, coding competitions, and tech clubs to enhance my skills. With strong analytical and problem-solving abilities, I have applied my knowledge to real-world projects. <span> My dream is to establish a tech startup one day and make a positive impact on society through digital solutions.</span> My motto is "Learning is a lifelong journey," and I am always eager to acquire new knowledge and experiences. </p>
+            <h2>Skills</h2>
+            <div class="skill-badge-container">
+                <div class="skill-badge" style="width: 70%;">C</div>
+                <div class="skill-badge" style="width: 75%;">Java</div>
+                <div class="skill-badge" style="width: 45%;">Python</div>
+                <div class="skill-badge" style="width: 50%;">Front-end</div>
+            </div>
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">MY FIRST PROJECT IS BUBBLE GAME HERE IS THE LINK <br><br> <a href="https://vishalrajyadav.github.io/Bubbles_game/">LINK</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">CURRENTLY   I AM WORKING ON A PROJECT RELATED TO STUDENT COMMIT SUICIDE,DAY BY DAY IT'S INCREASES THAT'S WHY I WANT TO SERVE SOMETHING RELATED TO STUDENTS......</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="WhatsApp Image 2023-10-07 at 2.46.14 AM (2).jpeg" class="card-img-top" alt="Mini Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">BUBBLE GAME</h5>
+                        <p class="card-text">It's a simple but intresting game to increase concentration level ..used this Game in Chrome And Make Sure Your Desktop Site Is On/Ticked</p>
+                        <a href="https://vishalrajyadav.github.io/Bubbles_game/" class="btn btn-primary">PLAY GAME</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="WhatsApp Image 2023-10-07 at 2.46.14 AM (3).jpeg" class="card-img-top" alt="Mini Project 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">MINI CALCULATOR</h5>
+                        <p class="card-text">This is just a basic calculator </p>
+                        <a href="https://vishalrajyadav.github.io/mini_calculator/" class="btn btn-primary">USE IT</a>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, please feel free to email me at <a href="vishalraj@gmail.com">vishalraj@gmail.com</a>.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: red;
+        }
+
+        .social-links .nav-item .nav-link {
+            color: #000;
+        }
+        body{
+            background-image: url(contact-us-1426589_1920.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            border: 3px solid black;
+            box-shadow: 8px 9px 8px black;
+        }
+        label{
+            color: #000;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 24px;">VISHU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav social-links mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100011634708404">Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/vishalrajyaduvanshi59?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Email</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="PORTFOLIO.HTML">Portfolio</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">My Gallery</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Your Address">
+        </div>
+        <div class="form-group">
+            <label for="details">Details</label>
+            <textarea class="form-control" id="details" rows="4" placeholder="Additional Details"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Feedback</label>
+            <textarea class="form-control" id="feedback" rows="4" placeholder="Your Feedback"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

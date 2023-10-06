@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <style>
+      
+        body {
+            background-color: #f4f4f4;
+            /* background-image: url(gallery.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative; */
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeIn 2s;
+        }
+        .image-item {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+            border-radius: 15px ;
+            box-shadow: 9px 8px 9px black;
+        }
+        .download-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            z-index: 1;
+        }
+        .image-item:hover .download-button {
+            opacity: 1;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .animate-enter {
+            animation: slideIn 0.5s ease-in-out;
+        }
+        .download-button{
+            height: 30px;
+        }
+        .navbar-nav .nav-item .nav-link {
+            transition: color 0.3s; 
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: red;
+        }
+
+      
+        .social-links .nav-item .nav-link {
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 24px;">VISHU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+        <ul class="navbar-nav social-links mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100011634708404">Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/vishalrajyaduvanshi59?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Email</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="PORTFOLIO.HTML">Portfolio</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">My Gallery</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+    <h2 class="text-center">Image Gallery</h2>
+    <div class="image-container">
+     
+<div class="image-item" style="background-image: url('a1.jpeg');">
+    <a href="a1.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a12.jpeg');">
+    <a href="a12.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a3.jpeg');">
+    <a href="a3.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a4.jpeg');">
+    <a href="a4.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a5.jpeg');">
+    <a href="a5.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a6.jpeg');">
+    <a href="a6.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a7.jpeg');">
+    <a href="a7.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a8.jpeg');">
+    <a href="a8.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a9.jpeg');">
+    <a href="a9.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a10.jpeg');">
+    <a href="a10.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a11.jpeg');">
+    <a href="a11.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+<div class="image-item" style="background-image: url('a2.jpeg');">
+    <a href="a2.jpeg" download class="download-button btn btn-primary" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 5px 10px;">Download</a>
+</div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const imageItems = document.querySelectorAll('.image-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-enter');
+                }
+            });
+        });
+
+        imageItems.forEach(item => {
+            observer.observe(item);
+        });
+    });
+</script>
+</body>
+</html>
